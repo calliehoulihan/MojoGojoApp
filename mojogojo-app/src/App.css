@@ -9,8 +9,6 @@
 .dashboard {
   display: grid;
   min-height: 100vh;
-  
-  background-color: var(--dark-purple);
   grid-template-areas:
     "header"
     "content";
@@ -19,7 +17,6 @@
 .sidebar {
   display: flex;
   flex-direction: row;
-  color: var(--white-color);
   justify-content: center;
   align-items: center;
   border-bottom: 3px solid var(--medium-purple);
@@ -38,7 +35,6 @@ ul li {
 
 ul li a {
   display: block;
-  color: var(--white-color);
   text-align: center;
   padding: .5rem;
   justify-content: center;
@@ -98,23 +94,36 @@ h1 {
 
 /*Desktop Queries*/
 @media (min-width: 1024px) {
-  .dashboard {
-    grid-template-columns: 250px 1fr;
-    grid-template-areas:
-      "sidebar header"
-      "sidebar content"
-      "sidebar footer";
-  }
 
-  .sidebar {
-    display: block;
-    grid-area: sidebar;
-    background: var(--dark-purple);
-    color: white;
-    padding: 1rem;
+  .dashboard {
+    align-items: center;
+    justify-content: center;
   }
 
   .content {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+  } 
+  
+  img{
+    width:100%;
   }
+ 
 }
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.card--home {
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
