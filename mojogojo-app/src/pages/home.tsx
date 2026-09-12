@@ -9,7 +9,7 @@ function Home() {
     </div>
 
       <main>
-          <div className="card card--home"><NavLink to="/dashboard">Japan Trip</NavLink></div>
+        <NavLink to="/dashboard"><div className="card card--home">Japan Trip</div></NavLink>
       </main>
     </div>
     </>

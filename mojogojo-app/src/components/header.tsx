@@ -5,7 +5,7 @@ import NavBar from "./navigation";
 function Header() {
   return (
    <div className="header">
-        <img src={headerBackground} alt="App Logo" />
+       <div className="image-wrapper"> <img src={headerBackground} alt="App Logo" /></div>
           <div className="header-content">
             <h1>Japan Trip</h1>
     
