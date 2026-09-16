@@ -5,6 +5,7 @@ import Dashboard from "./pages/dashboard";
 import Explore from "./pages/explore";
 import Itinerary from "./pages/itinerary";
 import Expenses from "./pages/expenses";
+import '@fontsource/roboto/300.css';
 
 function App() {
   return (
